@@ -55,4 +55,86 @@ section {
 	min-height: 450px;
 	background-color: #FFF;
 	border-radius: 7px;
+	padding: 25px;
+}
+
+.container {
+	display: flex;
+}
+
+.recipe-container {
+	flex: 1;
+	background-color:  #ecedd0;
+	background-height: 350px;
+	display:inline-block;
+	border: 10px solid white;
+	padding: 5px;
+	
+}
+
+img.rating {
+	width: 40%;
+}
+
+img.tile-rating {
+	width: 60%;
+}
+img.profile {
+	width: 85%;
+}
+
+img.tile-profile {
+	width: 100%;
+}
+
+table.tile {
+	padding: 0px;
+	border-collapse: collapse;
+}
+
+
+tr.shaded {
+	background-color: #e1dde6;
+}
+
+tr.shaded > th {
+	background-color: white;
+	padding: 3px;
+}
+
+#recipeTable {
+	border-collapse: collapse;
+}
+
+td.tile-name {
+	min-height: 100px;
+}
+
+.test-div {
+	display: flex;
+	position: relative;
+	bottom: 0;
+}
+
+.tile-rating {
+	flex: 1;
+	text-align: left;
+	position: relative;
+	display: inline;
+	align-content: flex-start;
+	vertical-align: bottom;
+}
+
+.tile-ingredients {
+	flex: 1;	
+	text-align: right;
+	position: relative;
+	display: inline;
+	justify-content: flex-end;
+	vertical-align: bottom;
+}
+
+.title-shaded {
+	position: relative;
+	vertical-align: bottom;
 }
