@@ -1,25 +1,9 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
-<!DOCTYPE html>
+<c:set var="pageTitle" value="Recipe Table View"/>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Recipe Table View</title>
-    <link rel="stylesheet" href="css/site.css" />
-</head>
-<body>
-    <header>
-        <h1>MVC Exercises - Views Part 2: Models</h1>        
-    </header>
-    <nav>
-        <ul>
-            <li><a href="recipeTiles">Tile Layout</a></li>
-            <li><a href="recipeTable">Table Layout</a></li>
-        </ul>
-        
-    </nav>
+<%@ include file="common/header.jspf" %>
     <section id="main-content">
     <!-- Use the request attribute "recipes" (List<Recipe>) -->
     
@@ -28,14 +12,14 @@
 			<tr>
 				<th>&nbsp;</th>
 					<c:forEach items="${recipes}" var= "recipe">
-						<td> <img src="img/recipe${recipe.recipeId}.jpg" class="profile"/> </td>
+						<td> <a href="recipeDetails?recipeId=${recipe.recipeId}" > <img src="img/recipe${recipe.recipeId}.jpg" class="profile"/> </a> </td>
 					</c:forEach>
 			</tr>	
 			
 			<tr class="shaded">
 				<th>Name</th>
 					<c:forEach items="${recipes}" var= "recipe">
-						<td> <c:out value="${recipe.name}"/> </td>
+						<td> <a href="recipeDetails?recipeId=${recipe.recipeId}" ><c:out value="${recipe.name}"/> </a></td>
 					</c:forEach>
 			</tr>	
 			
@@ -76,4 +60,3 @@
     </section>
 </body>
 </html>
-<!--<th> <img src="/mvc-views-part2-exercises-pair/src/main/webapp/img/recipe0.jpg" alt="Chili Garlic Roasted Broccoli"/></th>-->

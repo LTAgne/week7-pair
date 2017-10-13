@@ -15,6 +15,11 @@ header {
 	padding: 10px 10px;
 }
 
+a {
+	color: black;
+	text-decoration: none;
+}
+
 nav {
 	background-color: #8DC63F;
 	margin-bottom: 20px;
@@ -137,4 +142,36 @@ td.tile-name {
 .title-shaded {
 	position: relative;
 	vertical-align: bottom;
+}
+
+.detail-main-container {
+	display: flex;
+}
+
+.detail-image {
+	flex: 1;
+	display: inline;
+}
+
+.detailSummary {
+	flex: 3;
+	text-align: left;
+	padding: 15px;
+}
+
+.detailIngredients {
+	text-align: left;
+}
+
+li {
+	text-indent: 20px;
+
+}
+
+.detail-preparation {
+	text-align: left;
+}
+
+.detail-preparation ol {
+	list-style-type: decimal;
 }
