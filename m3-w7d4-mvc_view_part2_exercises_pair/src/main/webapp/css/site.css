@@ -161,6 +161,8 @@ td.tile-name {
 
 .detailIngredients {
 	text-align: left;
+	border-bottom: 1px;
+	border-bottom-style: solid;
 }
 
 li {
